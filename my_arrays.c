@@ -31,11 +31,12 @@ void swapValues(int array[], int size, int i, int j)
     return;
 }
 
-//requires: an array containing only digits 1,2 and 3
-//effects: computes the histogram with the frequency of each digit.
+// requires: an array containing only digits 1,2 and 3
+// effects: computes the histogram with the frequency of each digit.
 void arrayHistogram(int array[])
 {
-    if(SIZE == 0){
+    if (SIZE == 0)
+    {
         printf("Empty array!");
     }
     int count[3] = {0};
@@ -62,11 +63,12 @@ void arrayHistogram(int array[])
     }
 }
 
-//requires: a non empty array
-//effects: modifies the array by sorting its elements.
+// requires: a non empty array
+// effects: modifies the array by sorting its elements.
 void bubblesort(int array[], int size)
 {
-    if(size==0){
+    if (size == 0)
+    {
         printf("Empty array!");
     }
     int temp = 0;
@@ -82,11 +84,12 @@ void bubblesort(int array[], int size)
     }
 }
 
-//requires: a non-empty sorted array
-//effects: returns the median which is at the middle of the array 
+// requires: a non-empty sorted array
+// effects: returns the median which is at the middle of the array
 float median(int array[], int size)
 {
-    if(size == 0){
+    if (size == 0)
+    {
         printf("Empty array!");
     }
     if (size % 2 == 1)
@@ -101,11 +104,12 @@ float median(int array[], int size)
     }
 }
 
-//requires: a non-empty array
-//effects: loops over the array and counts the most existing number and returns it.
+// requires: a non-empty array
+// effects: loops over the array and counts the most existing number and returns it.
 int mode(int array[], int size)
 {
-    if(size==0){
+    if (size == 0)
+    {
         printf("Empty array!");
     }
     int count, temp = 0, element;
@@ -128,11 +132,12 @@ int mode(int array[], int size)
     return element;
 }
 
-//requires: a non-empty array
-//effects: return 1 if the array is sorted in in ascending order, else it returns 0 
+// requires: a non-empty array
+// effects: return 1 if the array is sorted in in ascending order, else it returns 0
 int isSorted(int array[], int size)
 {
-    if(size==0){
+    if (size == 0)
+    {
         printf("Empty array!");
     }
     int counter = 1;
