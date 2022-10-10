@@ -1,4 +1,6 @@
 #include <stdio.h>
+//requires: two non-negative integers, and a negative to stop the program
+//returns a number which represents how many bits differ between the two integers 
 int main(){
     int a,b;
     while (1>0)
